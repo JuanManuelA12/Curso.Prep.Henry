@@ -21,6 +21,12 @@ const {
 describe('obtenerMayor(x, y)', function() {
   it('should return x if it is larger than y', function() {
     expect(obtenerMayor(10, 5)).toBe(10);
+if (x<y) {
+  return y;
+} else
+return x;
+
+
   });
   it('should return y if it is larger than x', function() {
     expect(obtenerMayor(50, 100)).toBe(100);
@@ -146,7 +152,7 @@ describe('operadoresLogicos(num1, num2, num3)', function() {
   it('should return num3 + 1 if num3 is greater than num1 and num2', function() {
     expect(operadoresLogicos(1, 3, 10)).toBe(11);
   });
-  it('should return \'Error\' if any of the arguments are equal 0', function() {
+  it('should return \'Eror\' if any of the arguments are equal 0', function() {
     expect(operadoresLogicos(1, 0, 10)).toBe('Error');
   });
   it('should return false if none of the conditions are met', function() {
